@@ -1,17 +1,17 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Input') {
-            steps {
-                input('Do you want to proceed?')
+   stages {
+       stage('Input') {
+           steps {
+               input('Do you want to proceed?')
             }
         }
 
-        stage('If Proceed is clicked') {
-            steps {
-                print('hello')
-            }
-        }
+        stage('If proceed is clicked')  {
+             steps {
+                 print('nani hello')
+             }
+         }
     }
 }
